@@ -12,10 +12,6 @@ const Search = styled.input`
 `;
 
 function SearchInput() {
-  return (
-    <Search type="text">
-    </Search>
-    
-  ) 
+  return <Search type="text" />;
 }
 export default SearchInput;

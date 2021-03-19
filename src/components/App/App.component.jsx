@@ -6,7 +6,7 @@ import LoginPage from '../../pages/Login';
 import NotFound from '../../pages/NotFound';
 import SecretPage from '../../pages/Secret';
 import Private from '../Private';
-import Layout from '../Layout';
+// import Layout from '../Layout';
 import Navbar from '../Navbar/Navbar.component';
 
 function App() {
@@ -14,7 +14,6 @@ function App() {
     <BrowserRouter>
       <AuthProvider>
         <Navbar />
-        <Layout>
           <Switch>
             <Route exact path="/">
               <HomePage />
@@ -29,7 +28,6 @@ function App() {
               <NotFound />
             </Route>
           </Switch>
-        </Layout>
       </AuthProvider>
     </BrowserRouter>
   );
