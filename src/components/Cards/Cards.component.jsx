@@ -7,7 +7,7 @@ const CardsGrid = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: auto 5rem;
+  margin: 2rem 5rem;
 `;
 
 function Cards() {

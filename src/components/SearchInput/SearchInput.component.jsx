@@ -9,6 +9,7 @@ const Search = styled.input`
   background-size: 20px 20px;
   background-color: rgba(255, 255, 255, 0.15);
   margin: auto 1rem;
+  width: 300px;
 `;
 
 function SearchInput() {

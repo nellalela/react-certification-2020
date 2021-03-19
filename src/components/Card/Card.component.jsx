@@ -4,38 +4,44 @@ import styled from 'styled-components';
 const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  flex-basis: 28%;
+  flex-basis: 30%;
   background-color: #fff;
-  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%),
+    0px 1px 3px 0px rgb(0 0 0 / 12%);
   margin: 0.8rem 0;
-  height: 450px;
 `;
 
 const CardImg = styled.img`
-  height: 160px;
-  width: auto;
-  min-width: 284px
+  max-height: 160px;
+  width: 100%;
+  min-width: 284px;
+`;
+const CardInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  padding: 1.5rem;
 `;
 const CardTitle = styled.h1`
   font-size: 1.2rem;
-  margin: 1.5rem;
   color: #1b998b;
-  font-weight: bold;
+  font-weight: 400;
 `;
 const CardDescription = styled.p`
   font-size: 0.9rem;
-  margin: 0 1.5rem;
   color: #222222;
+  overflow: scroll;
 `;
-
 
 function Card({ video }) {
   console.log(video);
   return (
     <CardContainer>
       <CardImg src={video.snippet.thumbnails.medium.url} />
-      <CardTitle>{video.snippet.title}</CardTitle>
-      <CardDescription>{video.snippet.description}</CardDescription>
+      <CardInfo>
+        <CardTitle>{video.snippet.title}</CardTitle>
+        <CardDescription>{video.snippet.description}</CardDescription>
+      </CardInfo>
     </CardContainer>
   );
 }
