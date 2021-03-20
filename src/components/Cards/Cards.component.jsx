@@ -14,8 +14,12 @@ function Cards() {
   const videos = mockVideos.items;
   return (
     <CardsGrid>
-      {videos.map((video, i) => (
-        <Card video={video} key={video.etag} />
+      {videos.map((video) => (
+        <Card
+          key={video.etag}
+          url={video.snippet.thumbnails.medium.url}
+          title={video.snippet.title}
+          description={video.snippet.description} />
       ))}
     </CardsGrid>
   );

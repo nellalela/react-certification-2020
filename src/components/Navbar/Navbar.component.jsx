@@ -65,7 +65,7 @@ const Avatar = styled.img`
 function NavBar() {
   return (
     <NavHeader>
-      <NavToggle type="button">
+      <NavToggle type="button" aria-label="open side menu">
         <img src="./assets/menu.png" alt="menu toggler" />
       </NavToggle>
       <NavTitle>Wizeline Project</NavTitle>

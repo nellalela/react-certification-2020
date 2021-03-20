@@ -33,14 +33,13 @@ const CardDescription = styled.p`
   overflow: scroll;
 `;
 
-function Card({ video }) {
-  console.log(video);
+function Card({ url, title, description }) {
   return (
     <CardContainer>
-      <CardImg src={video.snippet.thumbnails.medium.url} />
+      <CardImg src={url} />
       <CardInfo>
-        <CardTitle>{video.snippet.title}</CardTitle>
-        <CardDescription>{video.snippet.description}</CardDescription>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription>{description}</CardDescription>
       </CardInfo>
     </CardContainer>
   );
