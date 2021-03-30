@@ -13,7 +13,7 @@ describe('component Card', () => {
   it(' display Card elements', () => {
     render(<Card {...cardMock} />);
 
-    const titleTest = screen.getByTestId('card-title')
+    const titleTest = screen.getByTestId('card-title');
 
     expect(screen.getByText(cardMock.title)).toBeTruthy();
     expect(screen.getByText(cardMock.description)).toBeTruthy();
