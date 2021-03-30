@@ -12,7 +12,7 @@ function Card({ url, title, description }) {
     <CardContainer>
       <CardImg src={url} />
       <CardInfo>
-        <CardTitle>{title}</CardTitle>
+        <CardTitle data-testid="card-title">{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardInfo>
     </CardContainer>
