@@ -11,6 +11,5 @@ describe('component Navbar', () => {
     expect(screen.getByRole('button', { name: 'open side menu' })).toBeTruthy();
     expect(screen.getByText('Dark Mode')).toBeTruthy();
     expect(screen.getByRole('img', { name: 'avatar' })).toBeTruthy();
-
   });
 });
